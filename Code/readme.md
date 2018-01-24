@@ -1,3 +1,7 @@
+The files here compute the similarity score of 2 Gene Ontology (GO) terms.
+
+The 3 methods are **Resnik**(https://www.jair.org/media/514/live-514-1722-jair.pdf), **AIC**(https://dl.acm.org/citation.cfm?id=2674838), **InferSent**. The **W2v** is in the folder ```Word2vec```.  
+
 These scripts were taken from [Wasi's github](https://github.com/wasiahmad/universal_sentence_encoder), and modified for applications regarding the Gene Ontology. 
 
 Install Anaconda Python 3, and python library pytorch http://pytorch.org/.

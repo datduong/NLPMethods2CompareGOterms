@@ -5,7 +5,7 @@ This code was developed in a previous experiment (nearly a year before the newes
 
 This code uses *Anaconda Python 2*. Install python library gensim https://radimrehurek.com/gensim/install.html. 
 
-Download all the scripts in this folder, and also the data in ```DataSource``` (if you haven't done so). 
+Download all the scripts in this folder, and also the data in [```DataSource```](https://github.com/datduong/NLPMethods2CompareGOterms/tree/master/DataSource) (if you haven't done so). 
 
 For this code, the Word2vec embedding must be in gensim object format. So download all the files here https://drive.google.com/drive/folders/1E_Y50lSnLDAN4yfPkglf-9aW_hqX8U2g?usp=sharing. Let's say you download these files in a folder name *gensimW2vModel*. 
 

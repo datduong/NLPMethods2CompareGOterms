@@ -1,6 +1,6 @@
-These scripts were taken from Wasi's github, and modified for applications regarding the Gene Ontology. 
+These scripts were taken from Wasi's github wasiahmad/universal_sentence_encoder, and modified for applications regarding the Gene Ontology. 
 
-Install Anaconda Python 3. 
+Install Anaconda Python 3, and python library pytorch http://pytorch.org/.
 
 Download all the scripts and the data sources (the .pickle and .cPickle) into the same folder. 
 

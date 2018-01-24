@@ -1,5 +1,7 @@
 These scripts were taken from Wasi's github, and modified for applications regarding the Gene Ontology. 
 
+Install Anaconda Python 3. 
+
 Download all the scripts and the data sources (the .pickle and .cPickle) into the same folder. 
 
 Run the main script compare2GO.py by using 
@@ -11,6 +13,8 @@ python3.5 compare2GO.py --data /u/flashscratch/d/datduong/goData/ --scoreOutput 
 ```/u/flashscratch/d/datduong/goData/``` is where InferSent data and model are saved. 
 ```/u/flashscratch/d/datduong/w2vModel1Gram11Nov2017/``` is the path to the w2v embedding. 
 These two paths will not be the same for your computer. Specify these paths correctly. 
+
+Add ```--cuda``` if you have GPU computing. Note, not using GPU will be much slower. 
 
 ```--all3 1``` option allows you to combine the 3 ontologies into 3 connected GO trees. Set this to ```--all3 0```, if you want to use the trees separately. 
 

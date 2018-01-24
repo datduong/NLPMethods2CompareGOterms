@@ -1,10 +1,10 @@
 The files here compute the similarity score of 2 Gene Ontology (GO) terms.
 
-#### Methods to compare 2 GO terms
+### Methods to compare 2 GO terms
 
 The 3 methods are [**Resnik**](https://www.jair.org/media/514/live-514-1722-jair.pdf), [**AIC**](https://dl.acm.org/citation.cfm?id=2674838), and **InferSent** metric. The **W2v** metric is in the folder ```Word2vec```.  
 
-#### Download the data sources
+### Download the data sources
 
 To train InferSent model, I used the scripts from [Wasi's github](https://github.com/wasiahmad/universal_sentence_encoder), and modified for applications regarding the Gene Ontology. 
 
@@ -12,7 +12,7 @@ Install Anaconda Python 3, and python library pytorch http://pytorch.org/.
 
 Download all the scripts and files in the ```DataSource``` into the same folder. 
 
-#### Run the main script
+### Run the main script
 
 Run the main script ```compare2GO.py``` by  
 
@@ -34,7 +34,7 @@ python3.5 compare2GO.py --cuda --data /u/flashscratch/d/datduong/goData/ --score
 
 ```exampleCases.txt``` file contains the pairs of GO terms that we want to compare. The pair ```0022900 0009055``` are from 2 different ontologies. Their score only appears if you set ```--all3 1```.
 
-#### Output file
+### Output file
 
 This is the **output**, using the option ```--all3 1```
 

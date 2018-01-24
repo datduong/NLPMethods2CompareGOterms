@@ -24,12 +24,14 @@ python3.5 compare2GO.py --cuda --data /u/flashscratch/d/datduong/goData/ --score
 
 This is the output, using the option ```--all3 1```
 
+```
 0006814 0006874 0.920131 0.00672202 0.107005600925 0.0 BP
 0004620 0019905 0.00174957 0.000463715 0.26424381785 0.0 MF
 0022900 0009055 0.999945 0.999449 0.719785762065 6.742243 mixed
 0016021 0005887 0.999985 0.99999 0.588589011969 2.4929818 CC
 0005829 0005615 0.84575 0.101346 0.21246784923 0.0 CC
 0005615 0005886 0.983047 0.997896 0.26177632525 0.0 CC
+```
 
 The columns are: 
 > GO term 1, GO term 2, Prob( term1 entails term2), Prob( term2 entails term1), AIC score, Resnik score, Ontology type. 

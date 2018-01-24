@@ -13,6 +13,8 @@ python3.5 compare2GO.py --data /u/flashscratch/d/datduong/goData/ --scoreOutput 
 ```/u/flashscratch/d/datduong/goData/``` is where you download the w2v embedding, GO annotation, InferSent data and model. 
 This path will not be the same for your computer. Specify the path correctly. 
 
+The options ```--pairStartIndex 0 --pairEndIndex 10``` indicate that you look at line 0 to line 10 in the input file ```exampleCases.txt```. This is meant for submitting parallel jobs, when the input file has too many lines. When ```pairEndIndex``` is reset to the number of lines in the input files, if it is too large. 
+
 Add ```--cuda``` option if you have GPU computing. Note, not using GPU will be much slower. For example, use 
 ```
 python3.5 compare2GO.py --cuda --data /u/flashscratch/d/datduong/goData/ --scoreOutput /u/flashscratch/d/datduong/goData/ --nameExpression exampleCasesB2b --pairs2test exampleCases.txt --goAnnotationFile /u/flashscratch/d/datduong/goData/ --pairStartIndex 0 --pairEndIndex 10 --bidirection --save_path /u/flashscratch/d/datduong/goData/ --word_vectors_file w2vModel1Gram11Nov2017NoHeader.txt --word_vectors_directory /u/flashscratch/d/datduong/goData/ --all3 1

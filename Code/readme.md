@@ -1,4 +1,4 @@
-These scripts were taken from Wasi's github wasiahmad/universal_sentence_encoder, and modified for applications regarding the Gene Ontology. 
+These scripts were taken from [Wasi's github](https://github.com/wasiahmad/universal_sentence_encoder), and modified for applications regarding the Gene Ontology. 
 
 Install Anaconda Python 3, and python library pytorch http://pytorch.org/.
 

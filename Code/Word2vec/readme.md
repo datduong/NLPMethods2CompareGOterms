@@ -1,11 +1,15 @@
 
-This code was developed in a previous experiment (nearly a year before the newest manuscript). I decided it is best to keep this code on its own. 
+This code was developed in a previous experiment (nearly a year before the newest manuscript). I decided it is best to keep this code on its own. In the case you're interested, please refer to a much the more [detail version](https://github.com/datduong/word2vec2compareGenes). This version was used in early 2017, but the background information remained the same. 
+
+### Download the data sources
 
 This code uses *Anaconda Python 2*. Install python library gensim https://radimrehurek.com/gensim/install.html. 
 
 Download all the scripts in this folder, and also the data in ```DataSource``` (if you haven't done so). 
 
 For this code, the Word2vec embedding must be in gensim object format. So download all the files here https://drive.google.com/drive/folders/1E_Y50lSnLDAN4yfPkglf-9aW_hqX8U2g?usp=sharing. Let's say you download these files in a folder name *gensimW2vModel*. 
+
+### Run the main script
 
 Run the main script ```w2vCompareGO.py```. 
 

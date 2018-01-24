@@ -50,4 +50,4 @@ This is the **output**, using the option ```--all3 1```
 The columns are: 
 > GO term 1, GO term 2, Prob( term1 entails term2), Prob( term2 entails term1), AIC score, Resnik score, Ontology type. 
 
-*Prob* means *probability*. For learning purposes, we output ```Prob( term1 entails term2), Prob( term2 entails term1)```. **InferSent GO score** is take as the ```max ( Prob( term1 entails term2), Prob( term2 entails term1) )```. 
+*Prob* means *probability*. For learning purposes, we output ```Prob( term1 entails term2), Prob( term2 entails term1)```. **InferSent GO score** is taken as the ```max ( Prob( term1 entails term2), Prob( term2 entails term1) )```. 

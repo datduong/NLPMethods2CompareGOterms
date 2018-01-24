@@ -2,7 +2,6 @@
 import sys, os, gensim, cPickle, pickle, re, gzip
 import numpy as np
 
-sys.path.append('/u/home/d/datduong/w2vSourceCode/')
 from func2cleanASentence4github import * ## import functions needed to clean setences 
 from SentenceSimilarity import * ## import functions needed to compare go terms 
 

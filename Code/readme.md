@@ -10,7 +10,7 @@ To train InferSent model, I used the scripts from [Wasi's github](https://github
 
 Install Anaconda Python 3, and python library pytorch http://pytorch.org/.
 
-Download all the scripts and files in the ```DataSource``` into the same folder. 
+Download all the scripts and files in the [```DataSource```](https://github.com/datduong/NLPMethods2CompareGOterms/tree/master/DataSource) into the same folder. 
 
 ### Run the main script
 

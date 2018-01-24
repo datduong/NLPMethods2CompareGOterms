@@ -1,10 +1,3 @@
-###############################################################################
-# Author: Wasi Ahmad
-# Project: Quora Duplicate Question Classification
-# Date Created: 7/25/2017
-#
-# File Description: This script contains code to test the model.
-###############################################################################
 
 # from __future__ import print_function
 import util2, helper, data, torch, numpy
@@ -15,7 +8,6 @@ import torch.nn.functional
 import pickle
 from score2GOsetsSentEncodeHeader2 import *
 
-sys.path.append('/u/home/d/datduong/w2vSourceCode/')
 from simGoAicV2 import *  
 from simGoResnik import *
 

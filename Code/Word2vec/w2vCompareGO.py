@@ -4,7 +4,6 @@ from copy import deepcopy
 import numpy as np
 import cPickle, pickle, re 
 
-sys.path.append('/u/home/d/datduong/w2vSourceCode/')
 from func2cleanASentence4github import * ## clean sentences 
 from func2getSimOf2GoTermsV2 import * ## compare 2 go terms 
 from SentenceSimilarity import * ## 
@@ -36,6 +35,7 @@ def submitJobs(pairs2test,goAnnotationFile,w2vModel,filefullpath,begin,end):
 	annotationBP = pickle.load(open(goAnnotationFile+"goBP.cPickle","rb"))
 	annotationCC = pickle.load(open(goAnnotationFile+"goCC.cPickle","rb"))
 	annotationMF = pickle.load(open(goAnnotationFile+"goMF.cPickle","rb"))
+	annotationAll3 = pickle.load(open(goAnnotationFile+"go3ontology.cPickle","rb"))
 	
 	model = gensim.models.Word2Vec.load(w2vModel)
 
@@ -57,11 +57,14 @@ def submitJobs(pairs2test,goAnnotationFile,w2vModel,filefullpath,begin,end):
 			if (pair[0] in annotationMF) & (pair[1] in annotationMF): 
 				ontology = "MF"
 				score = w2v2GoTerms ( pair[0], pair[1], annotationMF, hausdorffDistMod1to2Wted, model )
+			## not in the above, so in "mixed" 
+			ontology = "mixed"
+			score = w2v2GoTerms ( pair[0], pair[1], annotationAll3, hausdorffDistMod1to2Wted, model )
 		except: 
 			print "computation fail ", pair
 			continue 
 		
-		
+	
 		simscore [ pair[0] + " " + pair[1] ] = score ##   
 		counter = counter + 1
 		
@@ -79,7 +82,6 @@ else:
 	
 	
 	
-
 
 
 

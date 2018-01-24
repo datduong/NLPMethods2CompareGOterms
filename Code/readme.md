@@ -22,7 +22,7 @@ python3.5 compare2GO.py --cuda --data /u/flashscratch/d/datduong/goData/ --score
 
 ```exampleCases.txt``` file contains the pairs of GO terms that we want to compare. The pair ```0022900 0009055``` are from 2 different ontologies. Their score only appears if you set ```--all3 1```.
 
-This is the output, using the option ```--all3 1```
+This is the **output**, using the option ```--all3 1```
 
 ```
 0006814 0006874 0.920131 0.00672202 0.107005600925 0.0 BP
@@ -36,4 +36,4 @@ This is the output, using the option ```--all3 1```
 The columns are: 
 > GO term 1, GO term 2, Prob( term1 entails term2), Prob( term2 entails term1), AIC score, Resnik score, Ontology type. 
 
-InferSent GO score is take as the ```max ( Prob( term1 entails term2), Prob( term2 entails term1) )```. 
+For learning purposes, we output ```Prob( term1 entails term2), Prob( term2 entails term1)```. **InferSent GO score** is take as the ```max ( Prob( term1 entails term2), Prob( term2 entails term1) )```. 

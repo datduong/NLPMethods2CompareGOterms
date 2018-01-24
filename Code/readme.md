@@ -2,19 +2,21 @@ These scripts were taken from [Wasi's github](https://github.com/wasiahmad/unive
 
 Install Anaconda Python 3, and python library pytorch http://pytorch.org/.
 
-Download all the scripts and the data sources (the .pickle and .cPickle) into the same folder. 
+Download all the scripts and files in the ```DataSource``` into the same folder. 
 
 Run the main script compare2GO.py by using 
 
 ```
-python3.5 compare2GO.py --data /u/flashscratch/d/datduong/goData/ --scoreOutput /u/flashscratch/d/datduong/goData/ --nameExpression exampleCasesB2b --pairs2test exampleCases.txt --goAnnotationFile /u/flashscratch/d/datduong/goData/ --pairStartIndex 0 --pairEndIndex 10 --bidirection --save_path /u/flashscratch/d/datduong/goData/ --word_vectors_file w2vModel1Gram11Nov2017NoHeader.txt --word_vectors_directory /u/flashscratch/d/datduong/w2vModel1Gram11Nov2017/ --all3 1
+python3.5 compare2GO.py --data /u/flashscratch/d/datduong/goData/ --scoreOutput /u/flashscratch/d/datduong/goData/ --nameExpression exampleCasesB2b --pairs2test exampleCases.txt --goAnnotationFile /u/flashscratch/d/datduong/goData/ --pairStartIndex 0 --pairEndIndex 10 --bidirection --save_path /u/flashscratch/d/datduong/goData/ --word_vectors_file w2vModel1Gram11Nov2017NoHeader.txt --word_vectors_directory /u/flashscratch/d/datduong/goData/ --all3 1
 ```
 
-```/u/flashscratch/d/datduong/goData/``` is where InferSent data and model are saved. 
-```/u/flashscratch/d/datduong/w2vModel1Gram11Nov2017/``` is the path to the w2v embedding. 
-These two paths will not be the same for your computer. Specify these paths correctly. 
+```/u/flashscratch/d/datduong/goData/``` is where you download the w2v embedding, GO annotation, InferSent data and model. 
+This path will not be the same for your computer. Specify the path correctly. 
 
-Add ```--cuda``` if you have GPU computing. Note, not using GPU will be much slower. 
+Add ```--cuda``` option if you have GPU computing. Note, not using GPU will be much slower. For example, use 
+```
+python3.5 compare2GO.py --cuda --data /u/flashscratch/d/datduong/goData/ --scoreOutput /u/flashscratch/d/datduong/goData/ --nameExpression exampleCasesB2b --pairs2test exampleCases.txt --goAnnotationFile /u/flashscratch/d/datduong/goData/ --pairStartIndex 0 --pairEndIndex 10 --bidirection --save_path /u/flashscratch/d/datduong/goData/ --word_vectors_file w2vModel1Gram11Nov2017NoHeader.txt --word_vectors_directory /u/flashscratch/d/datduong/goData/ --all3 1
+```
 
 ```--all3 1``` option allows you to combine the 3 ontologies into 3 connected GO trees. Set this to ```--all3 0```, if you want to use the trees separately. 
 

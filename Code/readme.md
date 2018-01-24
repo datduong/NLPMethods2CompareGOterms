@@ -12,4 +12,5 @@ python3.5 compare2GO.py --data /u/flashscratch/d/datduong/goData/ --scoreOutput 
 ```/u/flashscratch/d/datduong/w2vModel1Gram11Nov2017/``` is the path to the w2v embedding. 
 These two paths will not be the same for your computer. Specify these paths correctly. 
 
-```--all3 1``` options allows you to combine the 3 ontologies into 3 connected GO trees. Set this to 0, if you want to treat the trees separately. 
+```--all3 1``` option allows you to combine the 3 ontologies into 3 connected GO trees. Set this to ```--all3 0```, if you want to use the trees separately. 
+

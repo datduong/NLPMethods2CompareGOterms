@@ -6,7 +6,7 @@ The 3 methods are [**Resnik**](https://www.jair.org/media/514/live-514-1722-jair
 
 ### Download the data sources
 
-To train InferSent model, I used the scripts from [Wasi's github](https://github.com/wasiahmad/universal_sentence_encoder), and modified for applications regarding the Gene Ontology. 
+To train InferSent model, I used the scripts from [Wasi's github](https://github.com/wasiahmad/universal_sentence_encoder), and modified for applications regarding the Gene Ontology. You will not need to train the model; use the pre-trained model in ```DataSource```. 
 
 Install Anaconda Python 3, and python library pytorch http://pytorch.org/.
 

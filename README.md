@@ -11,4 +11,6 @@ Go to **```Code```** folder to download all the source code (more instruction in
 
 ```getAncestors``` shows you how to get the ancestors of a GO term. 
 
+In this project, along with the main result, we also created [Gene names to vectors](https://drive.google.com/file/d/1W6BuDTve0oxHHao4X-ILtGArBMz6lmf2/view?usp=sharing).
+
 Full paper to be uploaded. 

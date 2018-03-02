@@ -13,4 +13,4 @@ Go to **```Code```** folder to download all the source code (more instruction in
 
 In this project, along with the main result, we also created [Gene names to vectors](https://drive.google.com/file/d/1W6BuDTve0oxHHao4X-ILtGArBMz6lmf2/view?usp=sharing).
 
-[```Full paper.```](https://github.com/datduong/NLPMethods2CompareGOterms/tree/master/Paper.pdf)
+[**```Full paper.```**](https://github.com/datduong/NLPMethods2CompareGOterms/tree/master/Paper.pdf)

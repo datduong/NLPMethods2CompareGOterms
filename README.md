@@ -1,5 +1,7 @@
 
-[**```Full paper.```**](https://github.com/datduong/NLPMethods2CompareGOterms/tree/master/Paper.pdf). Please cite from BioRxiv https://www.biorxiv.org/content/early/2018/03/02/103648. 
+[**```Full paper.```**](https://github.com/datduong/NLPMethods2CompareGOterms/tree/master/Paper.pdf) 
+
+Please cite from BioRxiv https://www.biorxiv.org/content/early/2018/03/02/103648. 
 
 This code introduces a [*word*](https://en.wikipedia.org/wiki/Word_embedding) and a *sentence embedding* method to compare 2 Gene Ontology terms. 
 

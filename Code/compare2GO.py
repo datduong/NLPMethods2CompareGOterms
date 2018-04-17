@@ -114,11 +114,11 @@ if __name__ == "__main__":
 					print ("go terms are in different ontologies\n") 
 					continue
 			if args.all3 == 1:
-				else: 
-					scoreInfersent = getScoreSet1Toward2 ([p[0]],[p[1]],model,dictionary,annotationAll3) 
-					scoreAic = aic2goTerms ('GO:'+p[0],'GO:'+p[1],ic4goAll3,ancestor4goAll3)
-					scoreResnik = resnik2goTerms ('GO:'+p[0],'GO:'+p[1],ic4goAll3,ancestor4goAll3)
-					ontologyType = "mixed" 
+				scoreInfersent = getScoreSet1Toward2 ([p[0]],[p[1]],model,dictionary,annotationAll3) 
+				scoreAic = aic2goTerms ('GO:'+p[0],'GO:'+p[1],ic4goAll3,ancestor4goAll3)
+				scoreResnik = resnik2goTerms ('GO:'+p[0],'GO:'+p[1],ic4goAll3,ancestor4goAll3)
+				ontologyType = "mixed" 
+				
 		except: 
 			print ('fail case: see go terms') 
 			print (p)

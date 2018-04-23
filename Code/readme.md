@@ -2,7 +2,7 @@ The files here compute the similarity score of 2 Gene Ontology (GO) terms.
 
 ### Methods to compare 2 GO terms
 
-The 5 methods are [**Resnik**](https://www.jair.org/media/514/live-514-1722-jair.pdf), [**AIC**](https://dl.acm.org/citation.cfm?id=2674838), and **InferSent** metric. The **W2v** metric is in the folder ```Word2vec```. The **simDEF** is in the folder ``simDEF``. **GOssTo** is at the [original source](https://github.com/pwac092/gossto). 
+The 5 methods are [**Resnik**](https://www.jair.org/media/514/live-514-1722-jair.pdf), [**AIC**](https://dl.acm.org/citation.cfm?id=2674838), and **InferSent** metric. The **W2v** metric is in the folder ```Word2vec```. The **simDEF** is in the folder ``simDEF``. **GOssTo** is at the [original source](https://github.com/pwac092/gossto). A lot of thanks to the dev of GOssTo who were very helpful. 
 
 ### Download the data sources
 

@@ -1,7 +1,7 @@
 
 [**```Full paper.```**](https://www.biorxiv.org/content/early/2018/03/20/103648) 
 
-Please cite from BioRxiv https://www.biorxiv.org/content/early/2018/03/20/103648. 
+Please cite from BioRxiv https://www.biorxiv.org/content/early/2018/05/14/103648. 
 
 This code introduces a [*word*](https://en.wikipedia.org/wiki/Word_embedding) and a *sentence embedding* method to compare 2 Gene Ontology terms. 
 
